@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Login from "./Components/Login";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <p style={{display:"flex",justifyContent:"center",paddingTop:"100px"}}><h5 style={{fontSize:"200%",fontFamily:"Archivo Black, sans-serif",color:"#5a6dce"}}>Stackfindover</h5></p>
+        <div className="auth-wrapper">
+          <div className="auth-inner">
+            <Login />
+          </div>
+          <a href="https://www.facebook.com/" style={{ textDecoration: "none",display:"flex",justifyContent:"center",paddingBottom:"400px",alignItems:"center"  }}><span style={{color:"#888a95"}}> Don't have an account?</span> Sign up</a>
+        </div>
+      
+    
+    </>
+
   );
 }
 
